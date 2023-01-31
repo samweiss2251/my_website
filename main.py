@@ -18,7 +18,7 @@ with col2:
        .stApp {{
            background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
            width: 99%;
-           height: 70%;
+           height: 60%;
            no-repeat center;
            background-size: cover;
        }}
