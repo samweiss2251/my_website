@@ -1,6 +1,17 @@
 import streamlit as st
 import base64
 
+st.markdown(
+    f"""
+    <style>
+    .stApp{{
+        background-color: #92a8d1;
+    }}
+       </style>
+       """,
+        unsafe_allow_html=True
+    )
+
 
 col1, col2, col3 = st.columns(3)
 image_file = "sam weiss.jpg"
@@ -13,7 +24,8 @@ with col2:
         f"""
        <style>
        .stApp {{
-           background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+            background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+           background-color: #92a8d1;
            width: 99%;
            height: 60%;
            no-repeat center;
