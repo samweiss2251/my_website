@@ -14,6 +14,32 @@ st.markdown(
 
 
 col1, col2, col3 = st.columns(3)
+with col1:
+    st.markdown(
+        f"""
+        <style>
+        .stApp{{
+            background-color: #92a8d1;
+        }}
+           </style>
+           """,
+        unsafe_allow_html=True
+    )
+
+
+with col3:
+    st.markdown(
+        f"""
+        <style>
+        .stApp{{
+            background-color: #92a8d1;
+        }}
+           </style>
+           """,
+        unsafe_allow_html=True
+    )
+
+
 image_file = "sam weiss.jpg"
 main = col2
 
